@@ -1,0 +1,2 @@
+gamerule sendCommandFeedback false
+schedule function creeper_birthday_party:restore_command_feedback 1t replace

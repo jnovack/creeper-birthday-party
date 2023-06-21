@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "creeper_birthday_party:load",
+        "creeper_birthday_party:tick",
+        "creeper_birthday_party:check_trigger",
+        "creeper_birthday_party:give_effects"
+    ]
+}
