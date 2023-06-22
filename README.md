@@ -1,12 +1,12 @@
 # Creeper Birthday Party
 
-**Creeper Birthday Party** is a faithful port of *Grunt Birthday Party*
-from the Halo series into Minecraft.
+**Creeper Birthday Party** is a faithful port of *Grunt Birthday Party* mode
+from the *Halo* series into *Minecraft*.
 
 When a creeper explodes, fireworks will be displayed in a confetti-like
 pattern and children will cheer "Yay!"
 
-<video src="https://github.com/jnovack/creeper-birthday-party/raw/main/assets/creeper-birthday-party.mp4"></video>
+<video width="100%" controls="controls" src="https://jnovack.github.io/creeper-birthday-party/videos/creeper-birthday-party.mp4"></video>
 
 ## Credits
 
