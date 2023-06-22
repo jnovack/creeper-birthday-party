@@ -30,6 +30,4 @@ jobs:
           with:
             files: creeper-birthday-party-*.zip
             name: ${{ github.ref_name }}
-            draft: true
-            prerelease: false
             body: ${{ github.event.head_commit.message }}
