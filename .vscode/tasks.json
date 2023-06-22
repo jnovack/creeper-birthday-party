@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Create build/ directory",
+            "type": "shell",
+            "command": "mkdir -p build/ | true"
+        },
+        {
+            "label": "Build Data Pack",
+            "dependsOn": [
+                "Create build/ directory"
+            ],
+            "type": "shell",
+            "command": "cd datapacks/creeper-birthday-party/; zip -r ../../build/$(basename $(git rev-parse --show-toplevel))-$(git describe --tag --match 'v*')-datapack.zip . -x .DS_Store"
+        },
+        {
+            "label": "Build Resource Pack",
+            "dependsOn": [
+                "Create build/ directory"
+            ],
+            "type": "shell",
+            "command": "cd resourcepacks/creeper-birthday-party/; zip -r ../../build/$(basename $(git rev-parse --show-toplevel))-$(git describe --tag --match 'v*')-resourcepack.zip . -x .DS_Store"
+        },
+        {
+            "label": "Build All",
+            "dependsOn": [
+                "Build Data Pack",
+                "Build Resource Pack"
+            ],
+            "group": "build",
+            "detail": "Build .zip files for deployment"
+        }
+    ]
+}
