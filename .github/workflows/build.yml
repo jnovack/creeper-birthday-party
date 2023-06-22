@@ -19,7 +19,7 @@ jobs:
         - name: Zip Data Pack
           uses: montudor/action-zip@v1
           with:
-            args: zip -qq -r $GITHUB_WORKSPACE/creeper-birthday-party-datapack-${{ github.ref }}.zip data/* pack.*
+            args: zip -qq -r $GITHUB_WORKSPACE/creeper-birthday-party-datapack-${{ github.ref }}.zip . -i data/* pack.*
 
         - name: Navigate to resourcepacks
           run: cd $GITHUB_WORKSPACE/resourcepacks/creeper-birthday-party/
@@ -27,7 +27,7 @@ jobs:
         - name: Zip Resource Pack
           uses: montudor/action-zip@v1
           with:
-            args: zip -qq -r $GITHUB_WORKSPACE/creeper-birthday-party-resourcepack-${{ github.ref }}.zip assets/* pack.* README.md
+            args: zip -qq -r $GITHUB_WORKSPACE/creeper-birthday-party-resourcepack-${{ github.ref }}.zip . -i assets/* pack.* README.md
 
         - name: Create github Release
           id: create_release
