@@ -6,6 +6,8 @@ from the Halo series into Minecraft.
 When a creeper explodes, fireworks will be displayed in a confetti-like
 pattern and children will cheer "Yay!"
 
+<video src="https://github.com/jnovack/creeper-birthday-party/raw/main/assets/creeper-birthday-party.mp4"></video>
+
 ## Credits
 
 The bulk of the code has been re-used from [Confetti Creepers](https://vanillatweaks.net/picker/datapacks/), a VanillaTweaks datapack.
