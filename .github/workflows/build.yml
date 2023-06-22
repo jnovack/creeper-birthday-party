@@ -14,21 +14,15 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v2
 
-        - name: Navigate to datapacks
-          run: cd $GITHUB_WORKSPACE/datapacks/creeper-birthday-party/
-
         - name: Zip Data Pack
           uses: montudor/action-zip@v1
           with:
-            args: zip -qq -r $GITHUB_WORKSPACE/creeper-birthday-party-datapack-${{ github.ref_name }}.zip . -i data/* pack.*
-
-        - name: Navigate to resourcepacks
-          run: cd $GITHUB_WORKSPACE/resourcepacks/creeper-birthday-party/
+            args: zip -qq -r creeper-birthday-party-datapack-${{ github.ref_name }}.zip $GITHUB_WORKSPACE/datapacks/creeper-birthday-party/ -i data/* pack.*
 
         - name: Zip Resource Pack
           uses: montudor/action-zip@v1
           with:
-            args: zip -qq -r $GITHUB_WORKSPACE/creeper-birthday-party-resourcepack-${{ github.ref_name }}.zip . -i assets/* pack.* README.md
+            args: zip -qq -r creeper-birthday-party-resourcepack-${{ github.ref_name }}.zip $GITHUB_WORKSPACE/resourcepacks/creeper-birthday-party/ -i assets/* pack.* README.md
 
         - name: Create github Release
           id: create_release
@@ -47,7 +41,7 @@ jobs:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
               upload_url: ${{ steps.create_release.outputs.upload_url }}
-              asset_path: $GITHUB_WORKSPACE/creeper-birthday-party-datapack-${{ github.ref_name }}.zip
+              asset_path: creeper-birthday-party-datapack-${{ github.ref_name }}.zip
               asset_name: creeper-birthday-party-datapack-${{ github.ref_name }}.zip
               asset_content_type: application/zip
 
@@ -57,7 +51,7 @@ jobs:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
               upload_url: ${{ steps.create_release.outputs.upload_url }}
-              asset_path: $GITHUB_WORKSPACE/creeper-birthday-party-resourcepack-${{ github.ref_name }}.zip
+              asset_path: creeper-birthday-party-resourcepack-${{ github.ref_name }}.zip
               asset_name: creeper-birthday-party-resourcepack-${{ github.ref_name }}.zip
               asset_content_type: application/zip
 
