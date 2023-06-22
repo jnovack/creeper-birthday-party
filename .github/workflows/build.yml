@@ -18,7 +18,7 @@ jobs:
 
         - name: Zip Data Pack
           run: zip -r ${{ github.workspace }}/creeper-birthday-party-datapack-${{ github.ref_name }}.zip . -i data/* pack.* credits.txt
-          working-directory: ${{ github.workspace }}/datapack/creeper-birthday-party/
+          working-directory: ${{ github.workspace }}/datapacks/creeper-birthday-party/
 
         - name: Zip Resource Pack
           run: zip -r ${{ github.workspace }}/creeper-birthday-party-resourcepack-${{ github.ref_name }}.zip . -i assets/* pack.* README.md
