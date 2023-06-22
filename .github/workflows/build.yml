@@ -16,21 +16,28 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v2
 
+        - name: List Files
+          run: ls -laR
+          
+        - name: Pwd
+          run: pwd
+
         - name: Zip Data Pack
           uses: montudor/action-zip@v1
           with:
-            args: zip -qq -r creeper-birthday-party-datapack-${{ github.ref_name }}.zip $GITHUB_WORKSPACE/datapacks/creeper-birthday-party/ -i data/* pack.*
+            args: zip -qq -r creeper-birthday-party-datapack-${{ github.ref_name }}.zip datapacks/creeper-birthday-party/ -i data/* pack.*
 
         - name: Zip Resource Pack
           uses: montudor/action-zip@v1
           with:
-            args: zip -qq -r creeper-birthday-party-resourcepack-${{ github.ref_name }}.zip $GITHUB_WORKSPACE/resourcepacks/creeper-birthday-party/ -i assets/* pack.* README.md
+            args: zip -qq -r creeper-birthday-party-resourcepack-${{ github.ref_name }}.zip resourcepacks/creeper-birthday-party/ -i assets/* pack.* README.md
 
         - name: Create github Release
           uses: softprops/action-gh-release@v1
           # if: startsWith(github.ref, 'refs/tags/')
           with:
             files: creeper-birthday-party-*.zip
+            name: ${{ github.ref_name }}
             draft: true
             prerelease: false
             body: ${{ github.event.head_commit.message }}
