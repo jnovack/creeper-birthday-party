@@ -6,7 +6,7 @@ from the *Halo* series into *Minecraft*.
 When a creeper explodes, fireworks will be displayed in a confetti-like
 pattern and children will cheer "Yay!"
 
-<video width="100%" controls="controls" src="https://jnovack.github.io/creeper-birthday-party/videos/creeper-birthday-party.mp4"></video>
+https://github.com/jnovack/creeper-birthday-party/assets/387006/8a8e7b4f-ea7f-46f3-b197-56c01fd7a77d
 
 ## Credits
 
