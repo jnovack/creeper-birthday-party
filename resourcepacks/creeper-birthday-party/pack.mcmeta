@@ -1,15 +1,37 @@
 {
-	"pack": {
-		"pack_format": 15,
-		"description": [
-			{
-				"text": "Creeper Birthday Party",
-				"color": "gold"
-			},
-			{
-				"text": "\nAdapted from vanillatweaks.net",
-				"color": "yellow"
-			}
-		]
-	}
+    "pack": {
+        "pack_format": 34,
+        "supported_formats": [
+            34,
+            46
+        ],
+        "description": [
+            {
+                "text": "Creeper Birthday Party v1.21.4",
+                "color": "yellow"
+            },
+            {
+                "text": "\nAdapted from vanillatweaks.net",
+                "color": "gold"
+            }
+        ]
+    },
+    "overlays": {
+        "entries": [
+            {
+                "formats": {
+                    "min_inclusive": 42,
+                    "max_inclusive": 46
+                },
+                "directory": "overlay_42"
+            },
+            {
+                "formats": {
+                    "min_inclusive": 46,
+                    "max_inclusive": 46
+                },
+                "directory": "overlay_46"
+            }
+        ]
+    }
 }

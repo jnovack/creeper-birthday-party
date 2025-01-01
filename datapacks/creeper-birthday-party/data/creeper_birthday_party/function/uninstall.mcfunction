@@ -1,5 +1,5 @@
 schedule clear creeper_birthday_party:tick
 schedule clear creeper_birthday_party:check_trigger
 schedule clear creeper_birthday_party:give_effects
-scoreboard objectives remove cftCreep
-scoreboard objectives remove cftCreep.config
+scoreboard objectives remove cbpCreep
+scoreboard objectives remove cbpCreep.config
