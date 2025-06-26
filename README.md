@@ -8,6 +8,20 @@ pattern and children will cheer "Yay!"
 
 https://github.com/jnovack/creeper-birthday-party/assets/387006/8a8e7b4f-ea7f-46f3-b197-56c01fd7a77d
 
+## Installation
+
+Unfortunately, you will need BOTH the **datapack** and the **resourcepack**.
+
+### Client
+
+- Copy the creeper-birthday-party-datapack to the `datapacks/` directory.
+- Copy the creeper-birthday-party-resourcepack to the `resourcepacks/` directory.
+
+### Server
+
+- Copy the creeper-birthday-party-datapack to the server's `datapacks/` directory.
+- Add the creeper-birthday-party-resourcepack files into your server's existing resourcepack download.
+
 ## Credits
 
 The bulk of the code has been re-used from [Confetti Creepers](https://vanillatweaks.net/picker/datapacks/), a VanillaTweaks datapack.

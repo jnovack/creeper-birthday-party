@@ -3,11 +3,11 @@
         "pack_format": 34,
         "supported_formats": [
             34,
-            55
+            63
         ],
         "description": [
             {
-                "text": "Creeper Birthday Party v1.21.5",
+                "text": "Creeper Birthday Party v1.21.6",
                 "color": "yellow"
             },
             {
@@ -19,15 +19,15 @@
 	"overlays": {
 		"entries": [
 			{
-				"formats": {"min_inclusive": 42, "max_inclusive": 55},
+				"formats": {"min_inclusive": 42, "max_inclusive": 63},
 				"directory": "overlay_42"
 			},
 			{
-				"formats": {"min_inclusive": 46, "max_inclusive": 55},
+				"formats": {"min_inclusive": 46, "max_inclusive": 63},
 				"directory": "overlay_46"
 			},
 			{
-				"formats": {"min_inclusive": 53, "max_inclusive": 55},
+				"formats": {"min_inclusive": 53, "max_inclusive": 63},
 				"directory": "overlay_53"
 			}
 		]
