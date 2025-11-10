@@ -1,13 +1,15 @@
 {
     "pack": {
         "pack_format": 34,
-        "supported_formats": [
-            34,
-            64
-        ],
+        "min_format": 34,
+        "max_format": 69,
+		"supported_formats": {
+            "min_inclusive": 34,
+            "max_inclusive": 69
+        },
         "description": [
             {
-                "text": "Creeper Birthday Party v1.21.6",
+                "text": "Creeper Birthday Party v1.21.10",
                 "color": "yellow"
             },
             {
@@ -19,15 +21,21 @@
 	"overlays": {
 		"entries": [
 			{
-				"formats": {"min_inclusive": 42, "max_inclusive": 64},
+				"formats": {"min_inclusive": 42, "max_inclusive": 69},
+				"min_format": 42,
+				"max_format": 69,
 				"directory": "overlay_42"
 			},
 			{
-				"formats": {"min_inclusive": 46, "max_inclusive": 64},
+				"formats": {"min_inclusive": 46, "max_inclusive": 69},
+				"min_format": 46,
+				"max_format": 69,
 				"directory": "overlay_46"
 			},
 			{
-				"formats": {"min_inclusive": 53, "max_inclusive": 64},
+				"formats": {"min_inclusive": 53, "max_inclusive": 69},
+				"min_format": 53,
+				"max_format": 69,
 				"directory": "overlay_53"
 			}
 		]
